@@ -1,3 +1,10 @@
-# vignettes
+---
+layout: default
+title: home
+---
 
-This is a test
+# {{ site.title }}
+
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
